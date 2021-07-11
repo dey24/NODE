@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | <%= title %></title>
+    <title>Blog| <%= title %></title>
 </head>
 <body>
-    <% const name =  'mario' %>
     <nav>
-        <p><%= name %></p>
         <div class="site-title">
             <a href="/"><h1>Blog Ninja</h1></a>
             <p>A Net Ninja Site</p>
@@ -20,8 +18,16 @@
             <li><a href="/blogs/create">New Blog</a></li>
         </ul>
     </nav>
-    <div class="blog-content">
-        <h2>All blogs </h2>
+    <div class="create-blog content">
+        <form>
+            <label for="title">Blog title: </label>
+            <input type="text" id="title" required>
+            <label for="title">Blog snippet: </label>
+            <input type="text" id="snippet" required>
+            <label for="title">Blog body: </label>
+            <textarea id="body" required></textarea>
+            <button>Submit</button>
+        </form>
     </div>
 </body>
 </html>
